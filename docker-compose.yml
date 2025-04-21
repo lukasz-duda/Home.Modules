@@ -1,0 +1,13 @@
+name: home
+
+services:
+
+  database:
+    image: mysql:5.7.38
+    environment:
+      MYSQL_ROOT_PASSWORD: "home"
+      MYSQL_USER: "home"
+      MYSQL_PASSWORD: "home"
+      MYSQL_DATABASE: "home"
+    ports:
+      - "3306:3306"
