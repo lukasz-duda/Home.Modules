@@ -11,3 +11,8 @@ services:
       MYSQL_DATABASE: "home"
     ports:
       - "3306:3306"
+    networks:
+      - infrastructure
+
+networks:
+  infrastructure:
